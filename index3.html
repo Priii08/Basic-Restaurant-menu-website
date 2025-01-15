@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F4E1D2;
+            color: #4B2F1A;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8B5E3C;
+            color: white;
+            padding: 20px 40px;
+            text-align: left;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #D77D3B;
+            padding: 15px 40px;
+            text-align: left;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            position: relative;
+            padding: 5px 0;
+        }
+        nav a:hover {
+            background-color: #8B5E3C;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #8B5E3C;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #4B2F1A;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #8B5E3C;
+            color: white;
+        }
+
+        td {
+            padding-left: 10px;
+        }
+
+        .menu-row:hover {
+            background-color: #D77D3B;
+            cursor: pointer;
+        }
+
+        .menu-item {
+            padding: 10px 0;
+        }
+
+        .about-us, .contact {
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        footer {
+            background-color: #8B5E3C;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            position: relative;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        /* Contact Form Styles */
+        form {
+            margin-top: 30px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            display: inline-block;
+            color: #4B2F1A;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #4B2F1A;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            background-color: #8B5E3C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #D77D3B;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>WELCOME TO MY RESTAURANT</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about-us">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Experience the finest dishes made from fresh ingredients, prepared with care. We offer a cozy atmosphere, great food, and excellent service. Come join us today and enjoy a memorable meal!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Menu</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="menu-row">
+                    <td class="menu-item">Spaghetti Carbonara</td>
+                    <td>A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.</td>
+                    <td>Rs.1299</td>
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-item">Margherita Pizza</td>
+                    <td>Fresh mozzarella, tomatoes, and basil on a crispy crust.</td>
+                    <td>Rs.1049</td>
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-item">Caesar Salad</td>
+                    <td>Romaine lettuce, croutons, parmesan, and Caesar dressing.</td>
+                    <td>Rs.799</td>
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-item">Grilled Chicken</td>
+                    <td>Boneless chicken breast grilled to perfection, served with veggies.</td>
+                    <td>Rs.1449</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>We are a family-owned restaurant serving delicious and freshly prepared dishes. Our goal is to provide high-quality food and exceptional service in a warm and inviting environment. Whether you’re here for a casual meal or a special celebration, we strive to make every dining experience memorable.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+        <p>Email: <a href="mailto:info@restaurant.com">info@restaurant.com</a></p>
+        <p>Phone: (+91)9374623746</p>
+        <p>Visit us at: 123 Delicious St, Delhi</p>
+
+        <!-- Contact Form -->
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Our Restaurant</p>
+        <p>Follow us: 
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </p>
+        <p>Quick Links: 
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about-us">About Us</a>
+            <a href="#contact">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
